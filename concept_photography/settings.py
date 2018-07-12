@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'home_page_content.apps.HomePageContentConfig',
     'services_page_content.apps.ServicesPageContentConfig',
     'about_us_page_content.apps.AboutUsPageContentConfig',
+    'pricing_page.apps.PricingPageConfig',
     'tinymce',
     'django.contrib.admin',
     'django.contrib.auth',
