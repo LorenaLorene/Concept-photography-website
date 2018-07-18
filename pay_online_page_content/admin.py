@@ -1,12 +1,6 @@
 from django.contrib import admin
-
-
-
 from .models import PayOnlineFrontPage
 from .models import PayOnlineNote
-
-
-
 
 
 class PayOnlineFrontPageAdmin(admin.ModelAdmin):
@@ -17,11 +11,9 @@ class PayOnlineFrontPageAdmin(admin.ModelAdmin):
 admin.site.register(PayOnlineFrontPage, PayOnlineFrontPageAdmin)
 
 
-
 class PayOnlineNoteAdmin(admin.ModelAdmin):
     model = PayOnlineNote
     list_display = ['please_note']
-
 
 
 admin.site.register(PayOnlineNote, PayOnlineNoteAdmin)

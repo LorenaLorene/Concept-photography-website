@@ -1,11 +1,6 @@
 from __future__ import unicode_literals
-
-
 from django.db import models
-
-
 from tinymce.models import HTMLField
-
 
 
 class PricingFrontPage(models.Model):

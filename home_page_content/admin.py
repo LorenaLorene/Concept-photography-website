@@ -1,14 +1,9 @@
 from django.contrib import admin
-
-
 from .models import HomeFrontPage
 from .models import CompanyVision
 from .models import ShootCount
 from .models import PhotographersCount
 from .models import OurService
-
-
-
 
 
 class HomeFrontPageAdmin(admin.ModelAdmin):
@@ -19,11 +14,9 @@ class HomeFrontPageAdmin(admin.ModelAdmin):
 admin.site.register(HomeFrontPage, HomeFrontPageAdmin)
 
 
-
 class CompanyVisionAdmin(admin.ModelAdmin):
     model = CompanyVision
     list_display = ['title', 'vision']
-
 
 
 admin.site.register(CompanyVision, CompanyVisionAdmin)
@@ -45,11 +38,9 @@ class PhotographersCountAdmin(admin.ModelAdmin):
 admin.site.register(PhotographersCount, PhotographersCountAdmin)
 
 
-
 class OurServiceAdmin(admin.ModelAdmin):
     model = OurService
     list_display = ['main_title', 'title', 'description_field']
-
 
 
 admin.site.register(OurService, OurServiceAdmin)

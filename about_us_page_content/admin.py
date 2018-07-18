@@ -1,16 +1,9 @@
 from __future__ import unicode_literals
-
 from django.contrib import admin
-
-
 from .models import AboutUsFrontPage
 from .models import MeetOurTeam
 from .models import OurTeam
 from .models import CustomerServiceTeam
-
-
-
-
 
 
 class AboutUsFrontPageAdmin(admin.ModelAdmin):
@@ -19,7 +12,6 @@ class AboutUsFrontPageAdmin(admin.ModelAdmin):
 
 
 admin.site.register(AboutUsFrontPage, AboutUsFrontPageAdmin)
-
 
 
 class MeetOurTeamAdmin(admin.ModelAdmin):

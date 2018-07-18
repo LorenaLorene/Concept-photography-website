@@ -1,11 +1,6 @@
 from __future__ import unicode_literals
-
-
 from django.db import models
-
-
 from tinymce.models import HTMLField
-
 
 
 class AboutUsFrontPage(models.Model):
@@ -14,7 +9,6 @@ class AboutUsFrontPage(models.Model):
     description_field = models.CharField(max_length=200)
     office_hours = HTMLField()
     testimonials = HTMLField()
-
 
 
 class MeetOurTeam(models.Model):
