@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'pay_online_page_content.apps.PayOnlinePageContentConfig',
     'galery_content_page.apps.GaleryContentPageConfig',
     'contact_information.apps.ContactInformationConfig',
+    'faqs_page_content.apps.FaqsPageContentConfig',
     'tinymce',
     'phonenumber_field',
     'django.contrib.admin',
