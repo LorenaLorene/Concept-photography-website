@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'galery_content_page.apps.GaleryContentPageConfig',
     'contact_information.apps.ContactInformationConfig',
     'faqs_page_content.apps.FaqsPageContentConfig',
+    'gdpr_page_content.apps.GdprPageContentConfig',
     'tinymce',
     'phonenumber_field',
     'django.contrib.admin',
