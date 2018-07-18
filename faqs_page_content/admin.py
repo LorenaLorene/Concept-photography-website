@@ -2,12 +2,12 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-from .models import PhotographyFaqs
+from .models import PhotographyFaq
 
 
-class PhotographyFaqsAdmin(admin.ModelAdmin):
-    model = PhotographyFaqs
-    list_display = ['title', 'faqs']
+class PhotographyFaqAdmin(admin.ModelAdmin):
+    model = PhotographyFaq
+    list_display = ['title', 'faq']
 
 
-admin.site.register(PhotographyFaqs, PhotographyFaqsAdmin)
+admin.site.register(PhotographyFaq, PhotographyFaqAdmin)

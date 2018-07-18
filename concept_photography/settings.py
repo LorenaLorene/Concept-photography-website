@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'about_us_page_content.apps.AboutUsPageContentConfig',
     'pricing_page.apps.PricingPageConfig',
     'pay_online_page_content.apps.PayOnlinePageContentConfig',
-    'galery_content_page.apps.GaleryContentPageConfig',
+    'gallery_content_page.apps.GalleryContentPageConfig',
     'contact_information.apps.ContactInformationConfig',
     'faqs_page_content.apps.FaqsPageContentConfig',
     'gdpr_page_content.apps.GdprPageContentConfig',

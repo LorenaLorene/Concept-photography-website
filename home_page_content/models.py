@@ -27,7 +27,7 @@ class PhotographersCount(models.Model):
     description_field = models.CharField(max_length=200)
 
 
-class OurServices(models.Model):
+class OurService(models.Model):
     main_title = models.CharField(max_length=200)
     title = models.CharField(max_length=200)
     description_field = models.CharField(max_length=200)

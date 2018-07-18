@@ -9,7 +9,7 @@ class ServicesFrontPage(models.Model):
     description_field = models.CharField(max_length=200)
 
 
-class Services(models.Model):
+class Service(models.Model):
     title = models.CharField(max_length=200)
     description_field = models.CharField(max_length=200)
     image = models.FileField(upload_to='assets/images')

@@ -5,7 +5,7 @@ from .models import HomeFrontPage
 from .models import CompanyVision
 from .models import ShootCount
 from .models import PhotographersCount
-from .models import OurServices
+from .models import OurService
 
 
 
@@ -46,10 +46,10 @@ admin.site.register(PhotographersCount, PhotographersCountAdmin)
 
 
 
-class OurServicesAdmin(admin.ModelAdmin):
-    model = OurServices
+class OurServiceAdmin(admin.ModelAdmin):
+    model = OurService
     list_display = ['main_title', 'title', 'description_field']
 
 
 
-admin.site.register(OurServices, OurServicesAdmin)
+admin.site.register(OurService, OurServiceAdmin)

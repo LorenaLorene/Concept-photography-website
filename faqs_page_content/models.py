@@ -7,8 +7,8 @@ from django.db import models
 from tinymce.models import HTMLField
 
 
-class PhotographyFaqs(models.Model):
+class PhotographyFaq(models.Model):
     title = models.CharField(max_length=200)
-    faqs = HTMLField()
+    faq = HTMLField()
 
 

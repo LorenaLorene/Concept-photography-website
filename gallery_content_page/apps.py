@@ -4,5 +4,5 @@ from __future__ import unicode_literals
 from django.apps import AppConfig
 
 
-class GaleryContentPageConfig(AppConfig):
-    name = 'galery_content_page'
+class GalleryContentPageConfig(AppConfig):
+    name = 'gallery_content_page'
