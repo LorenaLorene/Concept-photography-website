@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.conf.urls import include
 from . import views as homeViews
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from . import views
+
 
 
 urlpatterns = [
