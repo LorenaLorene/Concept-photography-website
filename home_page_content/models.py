@@ -9,8 +9,8 @@ class HomeFrontPage(models.Model):
 
 
 class CompanyVision(models.Model):
-    title = models.CharField(max_length=200)
-    vision = models.CharField(max_length=200)
+    title = models.CharField(max_length=350)
+    vision = models.CharField(max_length=350)
     image = models.FileField(upload_to='assets/images')
 
 
@@ -22,13 +22,13 @@ class ShootCount(models.Model):
 
 class PhotographersCount(models.Model):
     count_title = models.CharField(max_length=200)
-    description_field = models.CharField(max_length=200)
+    description_field = models.CharField(max_length=350)
 
 
 class OurService(models.Model):
     main_title = models.CharField(max_length=200)
     title = models.CharField(max_length=200)
-    description_field = models.CharField(max_length=200)
+    description_field = models.CharField(max_length=350)
     image = models.FileField(upload_to='assets/images')
 
 
