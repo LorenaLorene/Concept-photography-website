@@ -1,1 +1,101 @@
 {% extends 'base.html' %}
+
+{% block 'content' %}
+    <div class="buy">
+	<h2><a href="pay.html"><u>Parents: Click to Pay for prints online >></u></a></h2>
+	</div>
+
+    <!-- welcome -->
+    <div class="welcome">
+        <div class="container">
+            <div class="welcome-agile-row">
+                {%for CompanyVision in CompanyVisions%}
+                <div class="col-md-6 welcome-grid">
+                    <div class="welcome-grid-right">
+                        <img src="{{ CompanyVision.image.url }}" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="welcome-grid-left">
+                        <h4>{{ CompanyVision.title }}</h4>
+                        <p>{{ CompanyVision.vision }}</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+    </div>
+    <div class="features">
+			<div class="container">
+				<div class="features-agile-row">
+					<div class="col-md-6 features-grid">
+						<i class="fa fa-camera effect-w3ls" aria-hidden="true"></i>
+						<div class="features-text">
+							<h5 class="w3ls-counter">{{ ShootCount.count_title }}</h5>
+							<p>{{ ShootCount.description_field }}</p>
+						</div>
+					</div>
+					<div class="col-md-6 features-grid">
+						<i class="fa fa-users effect-w3ls" aria-hidden="true"></i>
+						<div class="features-text">
+							<h5 class="w3ls-counter">{{ PhotographersCount.count_title }}</h5>
+							<p>{{ PhotographersCount.description_field }}</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+   <div class="services">
+			<div class="container">
+				<h3 class="w3ls-title">Our Services</h3>
+				<div class="services-agile-row">
+					<div class="col-md-8 services-grid-info">
+						<div class="services-grid-row">
+							<div class="col-md-6 services-grid services-img">
+							</div>
+							<div class="col-md-6 services-grid services-text">
+								<h4>{{ firstService.title }}</h4>
+								<p>{{ firstService.description_field }}</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="services-grid-row">
+							<div class="col-md-6 services-grid services-img3">
+							</div>
+							<div class="col-md-6 services-grid services-text3">
+								<h4>{{ secondService.title }}</h4>
+								<p>{{ secondService.description_field }}</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="col-md-4 services-grid-info services-grid-row">
+						<div class="services-grid services-img2">
+						</div>
+						<div class="services-grid services-text2">
+							<h4>{{ thirdService.title }}</h4>
+							<p>{{ thirdService.description_field }}</p>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+   	<div class="buy">
+	<h2><a href="gdpr.html"><u>GDPR - Read our statement</u></a></h2>
+	</div>
+
+		<!-- address -->
+		<div class="address">
+			<div class="col-md-12 address-left">
+				<h4>Contact Info</h4>
+				<ul>
+					<li><i class="fa fa-map-marker"></i>{{ contactInfo.address }}</li>
+					<li><i class="fa fa-phone"></i>{{ contactInfo.phone }}</li>
+				</ul>
+			</div>
+
+		 </div>
+		</div>
+		<!-- //address -->
+{% endblock %}
