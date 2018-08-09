@@ -8,6 +8,7 @@
     <!-- welcome -->
     <div class="welcome">
         <div class="container">
+			{% if shouldShowCompanyVisions == true %}
             <div class="welcome-agile-row">
                 {%for CompanyVision in CompanyVisions%}
                 <div class="col-md-6 welcome-grid">
@@ -22,6 +23,7 @@
                 </div>
                 {%endfor%}
             </div>
+			{% endif %}
         </div>
     </div>
     <div class="features">
@@ -50,6 +52,7 @@
 				<h3 class="w3ls-title">Our Services</h3>
 				<div class="services-agile-row">
 					<div class="col-md-8 services-grid-info">
+						{% if firstService != False %}
 						<div class="services-grid-row">
 							<div class="col-md-6 services-grid services-img">
 							</div>
@@ -58,7 +61,9 @@
 								<p>{{ firstService.description_field }}</p>
 							</div>
 							<div class="clearfix"> </div>
-						</div>
+							</div>
+						{% endif %}
+						{% if secondService != False %}
 						<div class="services-grid-row">
 							<div class="col-md-6 services-grid services-img3">
 							</div>
@@ -68,19 +73,23 @@
 							</div>
 							<div class="clearfix"> </div>
 						</div>
+					    {% endif %}
 					</div>
-					<div class="col-md-4 services-grid-info services-grid-row">
-						<div class="services-grid services-img2">
-						</div>
-						<div class="services-grid services-text2">
-							<h4>{{ thirdService.title }}</h4>
-							<p>{{ thirdService.description_field }}</p>
+						{% if thirdService != False %}
+						<div class="col-md-4 services-grid-info services-grid-row">
+							<div class="services-grid services-img2">
+							</div>
+							<div class="services-grid services-text2">
+								<h4>{{ thirdService.title }}</h4>
+								<p>{{ thirdService.description_field }}</p>
+							</div>
+						<div class="clearfix"> </div>
+						{% endif %}
 						</div>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
-			</div>
-		</div>
+   			</div>
+	</div>
    	<div class="buy">
 	<h2><a href="gdpr.html"><u>GDPR - Read our statement</u></a></h2>
 	</div>

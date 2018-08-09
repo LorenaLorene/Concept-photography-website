@@ -8,13 +8,20 @@ from home_page_content.models import OurService
 from contact_information.models import ContactInfo
 
 
+
+def OurServiceByIndex(allOurServices, Index):
+    if Index < len(allOurServices):
+        return allOurServices[Index]
+    else:
+        return False
+
 def index(request):
-
-
     allOurServices = OurService.objects.all()
-    firstService = allOurServices[0]
-    secondService = allOurServices[1]
-    thirdService = allOurServices[2]
+    firstService = OurServiceByIndex(allOurServices, 0)
+    secondService = OurServiceByIndex(allOurServices, 1)
+    thirdService = OurServiceByIndex(allOurServices, 2)
+
+    shouldShowCompanyVision = len(CompanyVision.objects.all()) >= 1
 
 
     template = loader.get_template('home.html')
