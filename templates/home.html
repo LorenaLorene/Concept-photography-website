@@ -6,9 +6,9 @@
 	</div>
 
     <!-- welcome -->
+	{% if shouldShowCompanyVisions == true %}
     <div class="welcome">
         <div class="container">
-			{% if shouldShowCompanyVisions == true %}
             <div class="welcome-agile-row">
                 {%for CompanyVision in CompanyVisions%}
                 <div class="col-md-6 welcome-grid">
@@ -23,9 +23,9 @@
                 </div>
                 {%endfor%}
             </div>
-			{% endif %}
         </div>
     </div>
+	{% endif %}
     <div class="features">
 			<div class="container">
 				<div class="features-agile-row">

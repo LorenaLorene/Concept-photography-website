@@ -28,6 +28,7 @@ def index(request):
     context = { 'main_title': 'Preschool and Nursery specialists',
                 'small_title': 'Rethink Nursery/Preschool photography',
                 'CompanyVisions': CompanyVision.objects.all(),
+                'shouldShowCompanyVision': shouldShowCompanyVision,
                 'ShootCount': ShootCount.objects.first(),
                 'PhotographersCount': PhotographersCount.objects.first(),
                 'OurServices': OurService.objects.all(),
