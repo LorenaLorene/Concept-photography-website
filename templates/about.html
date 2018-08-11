@@ -56,4 +56,22 @@
 				</div>
 			</div>
 		</div>
+		<div class="team">
+			<div class="container">
+				<h3 class="w3ls-title">{{ MeetOurTeamTitle.title }}</h3>
+				<div class="team-grids">
+					<ul class="ch-grid">
+						{% for OurTeam in OurTeams %}
+							<li class="ch-grid-item">
+								<div class="ch-item ch-img-0">
+									<div class="ch-info">
+										<h3>{{ OurTeam.occupation }}</h3>
+										<p>{{ OurTeam.name }}</p>
+									</div>
+								</div>
+							</li>
+						{% endfor %}
+						</ul>
+						<div class="clearfix"> </div>
+				</div>
 {% endblock %}

@@ -16,6 +16,7 @@ class MeetOurTeam(models.Model):
 
 class OurTeam(models.Model):
     occupation = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
     image = models.FileField(upload_to='assets/images')
 
 

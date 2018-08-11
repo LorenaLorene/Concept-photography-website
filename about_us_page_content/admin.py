@@ -25,7 +25,7 @@ admin.site.register(MeetOurTeam, MeetOurTeamAdmin)
 
 class OurTeamAdmin(admin.ModelAdmin):
     model = OurTeam
-    list_display = ['occupation']
+    list_display = ['occupation', 'name']
 
 
 admin.site.register(OurTeam, OurTeamAdmin)
