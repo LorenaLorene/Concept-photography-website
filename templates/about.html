@@ -1,4 +1,59 @@
 {% extends 'base.html' %}
 
+
 {% block 'content' %}
+<div class="about">
+			<div class="container">
+				<h3 class="w3ls-title">{{ aboutUs.main_title }}</h3>
+				<div class="about-info">
+					<div class="about-row">
+						<h4>{{ aboutUs.title }}</h4>
+						<p class="top">
+						<p>{{ aboutUs.description_field }}</p>
+					</div>
+					<div class="about-bottom-row">
+						<div class="col-md-6 offic-time">
+							<div class="time-top">
+								<h4>Office Hours</h4>
+							</div>
+							<div class="time-bottom">
+								<h5>{{ aboutUs.office_hours }}</h5>
+							</div>
+						</div>
+						<div class="col-md-6 testi">
+							<div class="testi-slider">
+								<h3 class="title1">Testimo<span>nials</span></h3>
+								{% for Testimonial in Testimonials %}
+								<div class="flexslider flexslider1">
+									<ul class="slides">
+										<li>
+											<p>{{ Testimonial.testimonials }}</p>
+											<div class="testi-subscript">
+												<p><a href="#">Katie</a>Nursery Manager</p>
+												<span class="sbscrpt"> </span>
+											</div>
+										</li>
+									</ul>
+								</div>
+								{% endfor %}
+									<!-- FlexSlider -->
+										<script defer src="js/jquery.flexslider.js"></script>
+										<script type="text/javascript">
+										$(window).load(function(){
+										  $('.flexslider').flexslider({
+											animation: "slide",
+											start: function(slider){
+											  $('body').removeClass('loading');
+											}
+										  });
+										});
+									  </script>
+									<!-- End-slider-script -->
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
 {% endblock %}

@@ -4,11 +4,12 @@ from .models import AboutUsFrontPage
 from .models import MeetOurTeam
 from .models import OurTeam
 from .models import CustomerServiceTeam
+from .models import Testimonial
 
 
 class AboutUsFrontPageAdmin(admin.ModelAdmin):
     model = AboutUsFrontPage
-    list_display = ['main_title', 'title', 'description_field', 'office_hours', 'testimonials']
+    list_display = ['main_title', 'title', 'description_field', 'office_hours']
 
 
 admin.site.register(AboutUsFrontPage, AboutUsFrontPageAdmin)
@@ -36,3 +37,13 @@ class CustomerServiceTeamAdmin(admin.ModelAdmin):
 
 
 admin.site.register(CustomerServiceTeam, CustomerServiceTeamAdmin)
+
+
+class TestimonialAdmin(admin.ModelAdmin):
+    model = Testimonial
+    list_display = ['testimonials']
+
+
+admin.site.register(Testimonial, TestimonialAdmin)
+
+
