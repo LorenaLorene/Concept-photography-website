@@ -1,4 +1,36 @@
 {% extends 'base.html' %}
 
 {% block 'content' %}
+<div class="about">
+   <div class="container">
+      <h3 class="w3ls-title">{{ PricingFrontPage.main_title }}</h3>
+      <div class="about-info">
+         <div class="about-row">
+            <h4>{{ PricingFrontPage.description }}</h4>
+            <p class="top">
+         </div>
+      </div>
+      <div class="about-bottom-row">
+         <div class="col-md-12 offic-time">
+            <div class="time-top">
+               <h4>Multiple Proofs/Digital Prices</h4>
+            </div>
+            <div class="time-bottom">
+               <p>{{ Pricing.digital_prices }}</p>
+            </div>
+         </div>
+         <div class="about-bottom-row">
+            <div class="col-md-12 offic-time">
+               <div class="time-top">
+                  <h4>Canvas Prices</h4>
+               </div>
+               <div class="time-bottom">
+                  <p>{{ Pricing.canvas_prices }}</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
 {% endblock %}
