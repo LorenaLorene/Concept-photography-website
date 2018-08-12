@@ -58,20 +58,47 @@
 		</div>
 		<div class="team">
 			<div class="container">
-				<h3 class="w3ls-title">{{ MeetOurTeamTitle.title }}</h3>
-				<div class="team-grids">
-					<ul class="ch-grid">
-						{% for OurTeam in OurTeams %}
-							<li class="ch-grid-item">
-								<div class="ch-item ch-img-0">
-									<div class="ch-info">
-										<h3>{{ OurTeam.occupation }}</h3>
-										<p>{{ OurTeam.name }}</p>
-									</div>
-								</div>
-							</li>
-						{% endfor %}
-						</ul>
-						<div class="clearfix"> </div>
-				</div>
+			   <h3 class="w3ls-title">{{ MeetOurTeamTitle.title }}</h3>
+			   <div class="team-grids">
+				  <ul class="ch-grid">
+				  <li class="ch-grid-item">
+                     <div class="ch-item ch-img-0">
+						  <div class="ch-info">
+							 <h3>Director</h3>
+								 <p>Scott</p>
+						  </div>
+					 </div>
+				  </li>
+				  </ul>
+				  <ul class="ch-grid">
+					 {% for OurTeam in OurTeams %}
+					 <li class="ch-grid-item">
+						<div class="ch-item ch-img-0">
+						   <div class="ch-info">
+							  <h3>{{ OurTeam.occupation }}</h3>
+							  <p>{{ OurTeam.name }}</p>
+						   </div>
+						</div>
+					 </li>
+					 {% endfor %}
+				  </ul>
+				  <div class="clearfix"> </div>
+			   </div>
+				<ul class="ch-grid">
+			   <div class="team">
+				  <div class="container">
+					 <div class="w3ls-title">
+						<h4>{{ CustomerService.main_title }}</h4>
+						<p class="top">
+						<p>{{ CustomerService.description_field }}</p>
+						<div class="customerteam"><img src="{{ CustomerService.image.url }}" alt="customer service team" /> </div>
+					 </div>
+				  </div>
+			   </div>
+				</ul>
+			</div>
+		</div>
+
+
+
 {% endblock %}

@@ -22,7 +22,7 @@ class OurTeam(models.Model):
 
 class CustomerServiceTeam(models.Model):
     main_title = models.CharField(max_length=200)
-    description_field = models.CharField(max_length=200)
+    description_field = models.CharField(max_length=500)
     image = models.FileField(upload_to='assets/images')
 
 

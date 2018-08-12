@@ -6,6 +6,7 @@ from about_us_page_content.models import AboutUsFrontPage
 from about_us_page_content.models import Testimonial
 from about_us_page_content.models import MeetOurTeam
 from about_us_page_content.models import OurTeam
+from about_us_page_content.models import CustomerServiceTeam
 
 
 
@@ -15,6 +16,7 @@ def index(request):
                'aboutUs': AboutUsFrontPage.objects.first(),
                'Testimonials': Testimonial.objects.all(),
                'MeetOurTeamTitle': MeetOurTeam.objects.first(),
-               'OurTeams': OurTeam.objects.all()}
+               'OurTeams': OurTeam.objects.all(),
+               'CustomerService': CustomerServiceTeam.objects.first()}
 
     return HttpResponse(template.render(context, request))
