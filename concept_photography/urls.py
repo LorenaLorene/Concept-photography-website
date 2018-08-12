@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.conf.urls import include
 from . import views as homeViews
 from about_us_page_content import views as aboutViews
+from pricing_page import views as pricingViews
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import views
 
@@ -27,7 +28,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^tinymce/', include('tinymce.urls')),
     url(r'^about', aboutViews.index),
-    url(r'^', homeViews.index)
+    url(r'^pricing', pricingViews.index),
+    url(r'^', homeViews.index),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
