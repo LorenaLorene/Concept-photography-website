@@ -16,7 +16,7 @@
                <h4>Multiple Proofs/Digital Prices</h4>
             </div>
             <div class="time-bottom">
-               <p>{{ Pricing.digital_prices }}</p>
+               <p>{{ Pricing.digital_prices|safe }}</p>
             </div>
          </div>
          <div class="about-bottom-row">
@@ -25,7 +25,7 @@
                   <h4>Canvas Prices</h4>
                </div>
                <div class="time-bottom">
-                  <p>{{ Pricing.canvas_prices }}</p>
+                  <p>{{ Pricing.canvas_prices|safe }}</p>
                </div>
             </div>
          </div>
