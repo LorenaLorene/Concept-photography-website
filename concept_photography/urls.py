@@ -20,6 +20,7 @@ from . import views as homeViews
 from about_us_page_content import views as aboutViews
 from pricing_page import views as pricingViews
 from services_page_content import views as servicesViews
+from pay_online_page_content import views as payViews
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import views
 
@@ -31,6 +32,7 @@ urlpatterns = [
     url(r'^about', aboutViews.index),
     url(r'^pricing', pricingViews.index),
     url(r'^services', servicesViews.index),
+    url(r'^pay', payViews.index),
     url(r'^', homeViews.index),
 ]
 
