@@ -1,5 +1,94 @@
 {% extends 'base.html' %}
 
 {% block 'content' %}
-
+<div class="gallery">
+   <div class="container">
+      <h3 class="w3ls-title">{{ GalleryFrontPage.main_title }}</h3>
+      <div class="gallery-info">
+         <div class="col-md-8 gallery-grids">
+            <div class="galry-text">
+               <p>{{ GalleryFrontPage.description_field }}</p>
+            </div>
+            <div class="galry-grid glry-one">
+               <div class="glry-two glry-left">
+                  <a href="{{ GalleryImage.0.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                     <img src="{{ GalleryImage.0.image.url }}" alt="">
+                     <div class="w3agile-text">
+                     </div>
+                  </a>
+               </div>
+               <div class="glry-two glry-right">
+                  <a href="{{ GalleryImage.1.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                     <img src="{{ GalleryImage.1.image.url }}" alt="" class="img-responsive zoom-img">
+                     <div class="w3agile-text w3agile-text-small">
+                        <h5>Best Snapshots</h5>
+                     </div>
+                  </a>
+                  <a class="w3ls-bottom-img" href="{{ GalleryImage.2.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                     <img src="{{ GalleryImage.2.image.url }}" alt="" class="img-responsive zoom-img">
+                     <div class="w3agile-text w3agile-text-small">
+                        <h5>Best Snapshots</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="clearfix"> </div>
+            </div>
+            <div class="galry-grid glly-bottm">
+               <div class="glry-two glry-right">
+                  <a href="{{ GalleryImage.3.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                     <img src="{{ GalleryImage.3.image.url }}" alt="" class="img-responsive zoom-img">
+                     <div class="w3agile-text w3agile-text-small">
+                        <h5>Best Snapshots</h5>
+                     </div>
+                  </a>
+                  <a class="w3ls-bottom-img" href="{{ GalleryImage.4.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                     <img src="{{ GalleryImage.4.image.url }}" alt="" class="img-responsive zoom-img">
+                     <div class="w3agile-text w3agile-text-small">
+                        <h5>Best Snapshots</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="glry-two glry-left">
+                  <a href="{{ GalleryImage.5.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                     <img src="{{ GalleryImage.5.image.url }}" alt="" class="img-responsive zoom-img">
+                     <div class="w3agile-text">
+                        <h5>Best Snapshots</h5>
+                     </div>
+                  </a>
+               </div>
+               <div class="clearfix"> </div>
+            </div>
+         </div>
+         <div class="col-md-4 gallery-grids">
+            <div class="galry-grid grid-top-rgt">
+               <a href="{{ GalleryImage.6.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                  <img src="{{ GalleryImage.6.image.url }}" alt="" class="img-responsive zoom-img">
+                  <div class="w3agile-text w3agile-text-small2">
+                     <h5>Best Snapshots</h5>
+                  </div>
+               </a>
+            </div>
+            <div class="galry-grid grid-top-rgt galry-bottom-mdl">
+               <a href="{{ GalleryImage.7.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                  <img src="{{ GalleryImage.7.image.url }}" alt="" class="img-responsive zoom-img">
+                  <div class="w3agile-text">
+                     <h5>Best Snapshots</h5>
+                  </div>
+               </a>
+            </div>
+            <div class="galry-grid">
+               <a href="{{ GalleryImage.8.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                  <img src="{{ GalleryImage.8.image.url }}" alt="" class="img-responsive zoom-img">
+                  <div class="w3agile-text w3agile-text-small2">
+                     <h5>Best Snapshots</h5>
+                  </div>
+               </a>
+            </div>
+            <div class="clearfix"> </div>
+         </div>
+         <div class="clearfix"> </div>
+      </div>
+      <script src="js/lightbox-plus-jquery.min.js"></script>
+   </div>
+</div>
 {% endblock %}
