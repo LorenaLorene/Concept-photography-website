@@ -1,4 +1,33 @@
 {% extends 'base.html' %}
 
 {% block 'content' %}
+<div class="about">
+   <div class="container">
+      <h3 class="w3ls-title">{{ Gdpr.main_title }}</h3>
+      <div class="about-info">
+         <div class="about-row">
+            <h4>{{ Gdpr.description }}</h4>
+            <p class="top">
+         </div>
+         <div class="about-bottom-row">
+            <div class="col-md-12 offic-time">
+               <div class="time-top">
+                  <h4>{{ Gdpr.small_title }}</h4>
+               </div>
+               <div class="time-bottom">
+                  <p>
+                  <div>
+                     &nbsp;
+                     <h2>{{ Gdpr.gdpr_content|safe }}</h2>
+                  </div>
+                  </p>
+                  <h2 style="font-size:12pt; line-height: 25px; color:rgb(128,128,128); font-weight: bold">If you wish to consent to accepting E-mails from us, Please click <a href="https://goo.gl/forms/FsMq5N0UEHXbU3ob2"> here.</a></h2>
+                  <h2 style="font-size:12pt; line-height: 25px; color:rgb(128,128,128); font-weight: bold">If you wish to stop receiving E-mails from us, Please click <a href="https://goo.gl/forms/AUxF1Uc52uF3ShZs1"> here.</a></h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
 {% endblock %}
