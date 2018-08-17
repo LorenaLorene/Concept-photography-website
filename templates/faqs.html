@@ -1,4 +1,37 @@
 {% extends 'base.html' %}
 
 {% block 'content' %}
+<div class="contact">
+<div class="container">
+   <h1>
+      Nursery and Pre-School Photography FAQs
+   </h1>
+   <p>
+      &nbsp;
+   </p>
+   <!-- //Shoot FAQs -->
+  {% for PhotographyFaq in PhotographyFaqs %}
+   <div class="about-bottom-row">
+      <div class="col-md-12 offic-time">
+         <div class="time-top">
+            <h4>{{ PhotographyFaq.title }}</h4>
+         </div>
+         <div class="time-bottom">
+            <h5>{{ PhotographyFaq.faq|safe }}</h5>
+         </div>
+      </div>
+   </div>
+    {% endfor %}
+</div>
+    <div class="address">
+			<div class="col-md-12 address-left">
+				<h4>Contact Info</h4>
+				<ul>
+					<li><i class="fa fa-map-marker"></i>{{ contactInfo.address }}</li>
+					<li><i class="fa fa-phone"></i>{{ contactInfo.phone }}</li>
+				</ul>
+			</div>
+
+		 </div>
+		</div>
 {% endblock %}
