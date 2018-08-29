@@ -3,74 +3,77 @@
 {% block 'content' %}
 {% if shouldShowServices == true %}
 <div class="services">
-<div class="container">
-<h3 class="w3ls-title">{{ ServicesFrontPage.main_title }}</h3>
-<div class="about-info">
-   <div class="about-row">
-      <p class="top">
-      <p>{{ ServicesFrontPage.description_field }}</p>
-      <br>
-      <div class="services-agile-row">
-         <div class="col-md-8 services-grid-info">
-            <div class="services-grid-row">
-               <div class="col-md-6 services-grid services-img">
+   <div class="container">
+      <h3 class="w3ls-title">{{ ServicesFrontPage.main_title }}</h3>
+      <div class="about-info">
+         <div class="about-row">
+            <p class="top">
+            <p>{{ ServicesFrontPage.description_field }}</p>
+            <br>
+            <br>
+            <div class="services-agile-row">
+               <div class="col-md-8 services-grid-info">
+                  <div class="services-grid-row">
+                     <div class="col-md-6 services-grid services-img">
+                     </div>
+                     <div class="col-md-6 services-grid services-text">
+                        <h4>{{ Service.0.title }}</h4>
+                        <p>{{ Service.0.description_field }}</p>
+                     </div>
+                     <div class="clearfix"> </div>
+                  </div>
+                  <div class="services-grid-row">
+                     <div class="col-md-6 services-grid services-img3">
+                     </div>
+                     <div class="col-md-6 services-grid services-text3">
+                        <h4>{{ Service.1.title }}</h4>
+                        <p>{{ Service.1.description_field }}</p>
+                     </div>
+                     <div class="clearfix"> </div>
+                  </div>
                </div>
-               <div class="col-md-6 services-grid services-text">
-                  <h4>{{ Service.0.title }}</h4>
-                  <p>{{ Service.0.description_field }}</p>
+               <div class="col-md-4 services-grid-info services-grid-row">
+                  <div class="services-grid services-img2">
+                  </div>
+                  <div class="services-grid services-text2">
+                     <h4>{{ Service.2.title }}</h4>
+                     <p>{{ Service.2.description_field }}</p>
+                  </div>
                </div>
                <div class="clearfix"> </div>
             </div>
-            <div class="services-grid-row">
-               <div class="col-md-6 services-grid services-img3">
+            <div class="services-agile-row">
+               <div class="col-md-8 services-grid-info">
+                  <div class="services-grid-row">
+                     <div class="col-md-6 services-grid services-img4">
+                     </div>
+                     <div class="col-md-6 services-grid services-text">
+                        <h4>{{ Service.3.title }}</h4>
+                        <p>{{ Service.3.description_field }}</p>
+                     </div>
+                     <div class="clearfix"> </div>
+                  </div>
+                  <div class="services-grid-row">
+                     <div class="col-md-6 services-grid services-img5">
+                     </div>
+                     <div class="col-md-6 services-grid services-text3">
+                        <h4>{{ Service.4.title }}</h4>
+                        <p>{{ Service.4.description_field }} </p>
+                     </div>
+                     <div class="clearfix"> </div>
+                  </div>
                </div>
-               <div class="col-md-6 services-grid services-text3">
-                  <h4>{{ Service.1.title }}</h4>
-                  <p>{{ Service.1.description_field }}</p>
+               <div class="col-md-4 services-grid-info services-grid-row">
+                  <div class="services-grid services-img6">
+                  </div>
+                  <div class="services-grid services-text2">
+                     <h4>{{ Service.5.title }}</h4>
+                     <p>{{ Service.5.description_field }}</p>
+                  </div>
                </div>
                <div class="clearfix"> </div>
             </div>
          </div>
-         <div class="col-md-4 services-grid-info services-grid-row">
-            <div class="services-grid services-img2">
-            </div>
-            <div class="services-grid services-text2">
-               <h4>{{ Service.2.title }}</h4>
-               <p>{{ Service.2.description_field }}</p>
-            </div>
-         </div>
-         <div class="clearfix"> </div>
-      </div>
-      <div class="services-agile-row">
-         <div class="col-md-8 services-grid-info">
-            <div class="services-grid-row">
-               <div class="col-md-6 services-grid services-img4">
-               </div>
-               <div class="col-md-6 services-grid services-text">
-                  <h4>{{ Service.3.title }}</h4>
-                  <p>{{ Service.3.description_field }}</p>
-               </div>
-               <div class="clearfix"> </div>
-            </div>
-            <div class="services-grid-row">
-               <div class="col-md-6 services-grid services-img5">
-               </div>
-               <div class="col-md-6 services-grid services-text3">
-                  <h4>{{ Service.4.title }}</h4>
-                  <p>{{ Service.4.description_field }} </p>
-               </div>
-               <div class="clearfix"> </div>
-            </div>
-         </div>
-         <div class="col-md-4 services-grid-info services-grid-row">
-            <div class="services-grid services-img6">
-            </div>
-            <div class="services-grid services-text2">
-               <h4>{{ Service.5.title }}</h4>
-               <p>{{ Service.5.description_field }}</p>
-            </div>
-         </div>
-         <div class="clearfix"> </div>
       </div>
    </div>
 </div>

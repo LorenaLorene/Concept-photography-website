@@ -88,15 +88,15 @@
 				<h2>Navigation</h2>
 				<nav>
 					<ul class="primary-navi">
-						<li><a href="home.html" class="selected">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="pricing.html">Multiple Proofs/Canvas Pricing</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="pay.html">Pay Online</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="faqs.html">FAQ's</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="gdpr.html">GDPR</a></li>
+						<li><a href="/"{% if request.path == '/' %} class="selected"{% endif %}>Home</a></li>
+						<li><a href="/about"{% if request.path == '/about' %} class="selected"{% endif %}>About</a></li>
+						<li><a href="/pricing"{% if request.path == '/pricing' %} class="selected"{% endif %}>Multiple Proofs/Canvas Pricing</a></li>
+						<li><a href="/services"{% if request.path == '/services' %} class="selected"{% endif %}>Services</a></li>
+						<li><a href="/pay"{% if request.path == '/pay' %} class="selected"{% endif %}>Pay Online</a></li>
+						<li><a href="/gallery"{% if request.path == '/gallery' %} class="selected"{% endif %}>Gallery</a></li>
+						<li><a href="/faqs"{% if request.path == '/faqs' %} class="selected"{% endif %}>FAQ's</a></li>
+						<li><a href="/contact"{% if request.path == '/contact' %} class="selected"{% endif %}>Contact Us</a></li>
+						<li><a href="/gdpr"{% if request.path == '/gdpr' %} class="selected"{% endif %}>GDPR</a></li>
 					</ul>
 				</nav>
 			</div>
