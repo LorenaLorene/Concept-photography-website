@@ -1,14 +1,40 @@
 {% extends 'base.html' %}
 
+{% block 'header' %}
+<div class="banner about-banner">
+			<!-- header -->
+			<div class="header">
+				<div class="container">
+					<div class="logo">
+						<img src="assets/images/logo.png" alt="logo" />
+					</div>
+					<div class="logo-right">
+						<p><i class="fa fa-phone" aria-hidden="true"> </i>{{ contactInfo.phone }}</p>
+					</div>
+					<div class="top-nav">
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //header -->
+			<!-- banner-text -->
+			<div class="about-banner-text">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="base.html">Home</a></li>
+						<li class="active">FAQ's</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //banner-text -->
+</div>
+{% endblock %}
 {% block 'content' %}
 <div class="contact">
 <div class="container">
    <h1>
       Nursery and Pre-School Photography FAQs
    </h1>
-   <p>
-      &nbsp;
-   </p>
    <!-- //Shoot FAQs -->
   {% for PhotographyFaq in PhotographyFaqs %}
    <div class="about-bottom-row">
@@ -23,6 +49,9 @@
    </div>
     {% endfor %}
 </div>
+    <br>
+    <br>
+    <br>
     <div class="address">
 			<div class="col-md-12 address-left">
 				<h4>Contact Info</h4>

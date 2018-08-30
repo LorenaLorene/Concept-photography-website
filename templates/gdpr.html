@@ -1,5 +1,34 @@
 {% extends 'base.html' %}
 
+{% block 'header' %}
+<div class="banner about-banner">
+			<!-- header -->
+			<div class="header">
+				<div class="container">
+					<div class="logo">
+						<img src="assets/images/logo.png" alt="logo" />
+					</div>
+					<div class="logo-right">
+						<p><i class="fa fa-phone" aria-hidden="true"> </i>{{ contactInfo.phone }}</p>
+					</div>
+					<div class="top-nav">
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!-- //header -->
+			<!-- banner-text -->
+			<div class="about-banner-text">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="base.html">Home</a></li>
+						<li class="active">GDPR</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //banner-text -->
+</div>
+{% endblock %}
 {% block 'content' %}
 <div class="about">
    <div class="container">
