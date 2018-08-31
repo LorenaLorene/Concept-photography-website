@@ -10,6 +10,6 @@ def index(request):
     template = loader.get_template('pricing.html')
     context = {'contactInfo': ContactInfo.objects.first(),
                'PricingFrontPage': PricingFrontPage.objects.first(),
-               'Pricing': Pricing.objects.first()}
+               'Pricings': Pricing.objects.all()}
 
     return HttpResponse(template.render(context, request))

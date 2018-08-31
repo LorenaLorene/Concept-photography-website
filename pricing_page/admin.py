@@ -13,7 +13,7 @@ admin.site.register(PricingFrontPage, PricingFrontPageAdmin)
 
 class PricingAdmin(admin.ModelAdmin):
     model = Pricing
-    list_display = ['digital_prices', 'canvas_prices']
+    list_display = ['pricing_title', 'prices']
 
 
 admin.site.register(Pricing, PricingAdmin)

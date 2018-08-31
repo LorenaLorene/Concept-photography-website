@@ -40,26 +40,18 @@
             <p class="top">
          </div>
       </div>
+       {%for Pricing in Pricings%}
       <div class="about-bottom-row">
          <div class="col-md-12 offic-time">
             <div class="time-top">
-               <h4>Multiple Proofs/Digital Prices</h4>
+               <h4>{{ Pricing.pricing_title }}</h4>
             </div>
             <div class="time-bottom">
-               <p>{{ Pricing.digital_prices|safe }}</p>
-            </div>
-         </div>
-         <div class="about-bottom-row">
-            <div class="col-md-12 offic-time">
-               <div class="time-top">
-                  <h4>Canvas Prices</h4>
-               </div>
-               <div class="time-bottom">
-                  <p>{{ Pricing.canvas_prices|safe }}</p>
-               </div>
+               <p>{{ Pricing.prices|safe }}</p>
             </div>
          </div>
       </div>
+       {%endfor%}
    </div>
 </div>
 </div>

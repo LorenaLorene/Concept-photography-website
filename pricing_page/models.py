@@ -9,5 +9,5 @@ class PricingFrontPage(models.Model):
 
 
 class Pricing(models.Model):
-    digital_prices = HTMLField()
-    canvas_prices = HTMLField()
+    pricing_title = models.CharField(max_length=200)
+    prices = HTMLField()
