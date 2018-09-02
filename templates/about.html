@@ -104,7 +104,7 @@
          <ul class="ch-grid">
             {% for OurTeam in OurTeams %}
             <li class="ch-grid-item">
-               <div class="ch-item ch-img-0">
+               <div class="ch-item" style="background: url({{ OurTeam.image.url }}) center top">
                   <div class="ch-info">
                      <h3>{{ OurTeam.occupation }}</h3>
                      <p>{{ OurTeam.name }}</p>
