@@ -14,6 +14,12 @@ class MeetOurTeam(models.Model):
     title = models.CharField(max_length=200)
 
 
+class OurTeamDirector(models.Model):
+    occupation = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+    image = models.FileField(upload_to='assets/images')
+
+
 class OurTeam(models.Model):
     occupation = models.CharField(max_length=200)
     name = models.CharField(max_length=200)

@@ -5,7 +5,7 @@ from .models import MeetOurTeam
 from .models import OurTeam
 from .models import CustomerServiceTeam
 from .models import Testimonial
-
+from .models import OurTeamDirector
 
 class AboutUsFrontPageAdmin(admin.ModelAdmin):
     model = AboutUsFrontPage
@@ -21,6 +21,14 @@ class MeetOurTeamAdmin(admin.ModelAdmin):
 
 
 admin.site.register(MeetOurTeam, MeetOurTeamAdmin)
+
+
+class OurTeamDirectorAdmin(admin.ModelAdmin):
+    model = OurTeamDirector
+    list_display = ['occupation', 'name']
+
+
+admin.site.register(OurTeamDirector, OurTeamDirectorAdmin)
 
 
 class OurTeamAdmin(admin.ModelAdmin):
