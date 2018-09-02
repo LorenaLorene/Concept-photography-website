@@ -13,6 +13,7 @@ def index(request):
     template = loader.get_template('services.html')
     context = {'contactInfo': ContactInfo.objects.first(),
                'ServicesFrontPage': ServicesFrontPage.objects.first(),
-               'Service': Service.objects.all()}
+               'Service': Service.objects.all(),
+               'shouldShowServices': shouldShowServices}
 
     return HttpResponse(template.render(context, request))
