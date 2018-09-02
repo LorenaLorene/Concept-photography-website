@@ -40,7 +40,11 @@
             <p>{{ aboutUs.description_field }}</p>
          </div>
          <div class="about-bottom-row">
-            <div class="col-md-6 offic-time">
+             {% if Testimonials %}
+                <div class="col-md-6 offic-time">
+            {% else %}
+                <div class="col-md-12 offic-time">
+            {% endif %}
                <div class="time-top">
                   <h4>Office Hours</h4>
                </div>
