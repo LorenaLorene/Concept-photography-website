@@ -43,6 +43,7 @@
             <br>
             <div class="services-agile-row">
                <div class="col-md-8 services-grid-info">
+                   {% if Service.0 %}
                   <div class="services-grid-row">
                      <div class="col-md-6 services-grid services-img" style="background: url({{ Service.0.image.url }}) no-repeat center 0px;background-size:cover;">
                      </div>
@@ -52,6 +53,8 @@
                      </div>
                      <div class="clearfix"> </div>
                   </div>
+                   {% endif %}
+                   {% if Service.1 %}
                   <div class="services-grid-row">
                      <div class="col-md-6 services-grid services-img3" style="background: url({{ Service.1.image.url }}) no-repeat center 0px;background-size:cover;">
                      </div>
@@ -61,19 +64,22 @@
                      </div>
                      <div class="clearfix"> </div>
                   </div>
+                   {% endif %}
                </div>
+                {% if Service.2 %}
                <div class="col-md-4 services-grid-info services-grid-row">
-                  <div class="services-grid services-img2" style="background: url({{ Service.2.image.url }}) no-repeat center 0px;background-size:cover;">
-                  </div>
+                  <div class="services-grid services-img2" style="background: url({{ Service.2.image.url }}) no-repeat center 0px;background-size:cover;"></div>
                   <div class="services-grid services-text2">
                      <h4>{{ Service.2.title }}</h4>
                      <p>{{ Service.2.description_field }}</p>
                   </div>
                </div>
+               {% endif %}
                <div class="clearfix"> </div>
             </div>
             <div class="services-agile-row">
                <div class="col-md-8 services-grid-info">
+                    {% if Service.3 %}
                   <div class="services-grid-row">
                      <div class="col-md-6 services-grid services-img4" style="background: url({{ Service.3.image.url }}) no-repeat center 0px;background-size:cover;">
                      </div>
@@ -83,6 +89,8 @@
                      </div>
                      <div class="clearfix"> </div>
                   </div>
+                    {% endif %}
+                   {% if Service.4 %}
                   <div class="services-grid-row">
                      <div class="col-md-6 services-grid services-img5" style="background: url({{ Service.4.image.url }}) no-repeat center 0px;background-size:cover;">
                      </div>
@@ -92,7 +100,9 @@
                      </div>
                      <div class="clearfix"> </div>
                   </div>
+                    {% endif %}
                </div>
+                {% if Service.5 %}
                <div class="col-md-4 services-grid-info services-grid-row">
                   <div class="services-grid services-img6" style="background: url({{ Service.5.image.url }}) no-repeat center 0px;background-size:cover;">
                   </div>
@@ -102,6 +112,7 @@
                   </div>
                </div>
                <div class="clearfix"> </div>
+                    {% endif %}
             </div>
          </div>
       </div>
