@@ -101,7 +101,7 @@
 					<div class="col-md-8 services-grid-info">
 						{% if firstService != False %}
 						<div class="services-grid-row">
-							<div class="col-md-6 services-grid services-img">
+							<div class="col-md-6 services-grid services-img" style="background: url({{ firstService.image.url }}) no-repeat center 0px;background-size:cover;">
 							</div>
 							<div class="col-md-6 services-grid services-text">
 								<h4>{{ firstService.title }}</h4>
@@ -112,7 +112,7 @@
 						{% endif %}
 						{% if secondService != False %}
 						<div class="services-grid-row">
-							<div class="col-md-6 services-grid services-img3">
+							<div class="col-md-6 services-grid services-img3" style="background: url({{ secondService.image.url }}) no-repeat center 0px;background-size:cover;">
 							</div>
 							<div class="col-md-6 services-grid services-text3">
 								<h4>{{ secondService.title }}</h4>
@@ -124,7 +124,7 @@
 					</div>
 						{% if thirdService != False %}
 						<div class="col-md-4 services-grid-info services-grid-row">
-							<div class="services-grid services-img2">
+							<div class="services-grid services-img2" style="background: url({{ thirdService.image.url }}) no-repeat center 0px;background-size:cover;">
 							</div>
 							<div class="services-grid services-text2">
 								<h4>{{ thirdService.title }}</h4>
