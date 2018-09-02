@@ -2560,3 +2560,16 @@ h3.w3ls-title {
 }
 }
 /*-- //responsive-design --*/
+
+.gallery-item {
+    width: 33.333%;
+    float:left;
+    height: 300px;
+}
+
+@media(max-width:768px){
+.gallery-item {
+    width: 100%;
+        margin: 8px;
+}
+}

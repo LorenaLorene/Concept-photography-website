@@ -7,7 +7,6 @@ from services_page_content.models import Service
 
 
 def index(request):
-
     shouldShowServices = len(Service.objects.all()) >= 1
 
     template = loader.get_template('services.html')

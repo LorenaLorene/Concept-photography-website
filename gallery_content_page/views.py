@@ -6,10 +6,16 @@ from gallery_content_page.models import GalleryFrontPage
 from gallery_content_page.models import GalleryImage
 
 
+def chunks(list, n):
+    """Yield successive n-sized chunks from l."""
+    for i in range(0, len(list), n):
+        yield list[i:i + n]
+
+
 def index(request):
     template = loader.get_template('gallery.html')
     context = {'contactInfo': ContactInfo.objects.first(),
                'GalleryFrontPage': GalleryFrontPage.objects.first(),
-               'GalleryImage': GalleryImage.objects.all()}
+               'GalleryImageChunks': chunks(GalleryImage.objects.all(), 3)}
 
     return HttpResponse(template.render(context, request))
