@@ -5,7 +5,7 @@ from .models import Gdpr
 
 class GdprAdmin(admin.ModelAdmin):
     model = Gdpr
-    list_display = ['main_title', 'description', 'small_title', 'gdpr_content']
+    list_display = ['main_title', 'description', 'small_title', 'gdpr_content', 'consent_link', 'stop_link']
 
 
 admin.site.register(Gdpr, GdprAdmin)

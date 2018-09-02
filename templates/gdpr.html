@@ -46,12 +46,15 @@
                <div class="time-bottom">
                   <p>
                   <div>
-                     &nbsp;
                      <h2>{{ Gdpr.gdpr_content|safe }}</h2>
                   </div>
                   </p>
-                  <h2 style="font-size:12pt; line-height: 25px; color:rgb(128,128,128); font-weight: bold">If you wish to consent to accepting E-mails from us, Please click <a href="https://goo.gl/forms/FsMq5N0UEHXbU3ob2"> here.</a></h2>
-                  <h2 style="font-size:12pt; line-height: 25px; color:rgb(128,128,128); font-weight: bold">If you wish to stop receiving E-mails from us, Please click <a href="https://goo.gl/forms/AUxF1Uc52uF3ShZs1"> here.</a></h2>
+                   {% if Gdpr.consent_link %}
+                  <h2 style="font-size:12pt; line-height: 25px; color:rgb(128,128,128); font-weight: bold">If you wish to consent to accepting E-mails from us, Please click <a href="{{ Gdpr.consent_link }}"> here.</a></h2>
+                   {% endif %}
+                   {% if Gdpr.stop_link %}
+                  <h2 style="font-size:12pt; line-height: 25px; color:rgb(128,128,128); font-weight: bold">If you wish to stop receiving E-mails from us, Please click <a href="{{ Gdpr.stop_link }}"> here.</a></h2>
+                   {% endif %}
                </div>
             </div>
          </div>

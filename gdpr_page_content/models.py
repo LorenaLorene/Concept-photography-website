@@ -8,3 +8,5 @@ class Gdpr(models.Model):
     description = models.CharField(max_length=200)
     small_title = models.CharField(max_length=200)
     gdpr_content = HTMLField()
+    consent_link = models.CharField(max_length=200, blank=True)
+    stop_link = models.CharField(max_length=200, blank=True)
