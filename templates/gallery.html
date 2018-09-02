@@ -42,7 +42,7 @@
             {% for GalleryImageChunk in GalleryImageChunks %}
             <div style="width: 100%">
                 {% for GalleryImage in GalleryImageChunk %}
-                <a href="{{ GalleryImage.image.url }}" data-lightbox="example-set" data-title="Concept Photography.">
+                <a href="{{ GalleryImage.image.url }}" data-lightbox="example-set" data-title="{{ GalleryImage.image_title }}">
                     <div style="background: url({{ GalleryImage.image.url }}) center center; background-size: cover;" class="gallery-item"></div>
                 </a>
                 {% endfor %}

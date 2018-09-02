@@ -26,8 +26,6 @@ from faqs_page_content import views as faqsViews
 from contact_information import views as contactViews
 from gdpr_page_content import views as gdprViews
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from . import views
-
 
 
 urlpatterns = [

@@ -8,4 +8,5 @@ class GalleryFrontPage(models.Model):
 
 
 class GalleryImage(models.Model):
+    image_title = models.CharField(max_length=200)
     image = models.FileField(upload_to='assets/images')

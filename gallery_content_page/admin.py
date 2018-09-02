@@ -13,7 +13,7 @@ admin.site.register(GalleryFrontPage, GalleryFrontPageAdmin)
 
 class GalleryImageAdmin(admin.ModelAdmin):
     model = GalleryImage
-    list_display = ['image']
+    list_display = ['image_title']
 
 
 admin.site.register(GalleryImage, GalleryImageAdmin)
