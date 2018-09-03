@@ -4,6 +4,7 @@ from .models import CompanyVision
 from .models import ShootCount
 from .models import PhotographersCount
 from .models import OurService
+from .models import ClickToPayLink
 
 
 class HomeFrontPageAdmin(admin.ModelAdmin):
@@ -12,6 +13,14 @@ class HomeFrontPageAdmin(admin.ModelAdmin):
 
 
 admin.site.register(HomeFrontPage, HomeFrontPageAdmin)
+
+
+class ClickToPayLinkAdmin(admin.ModelAdmin):
+    model = ClickToPayLink
+    list_display = ['link_description', 'link']
+
+
+admin.site.register(ClickToPayLink, ClickToPayLinkAdmin)
 
 
 class CompanyVisionAdmin(admin.ModelAdmin):

@@ -390,6 +390,7 @@ div.main {
     background-color: #ffa3f8;
     text-align: center;
     font-size: 1em;
+    text-decoration: underline;
 }
 /*-- welcome --*/
 .welcome,.team,.services,.about,.gallery,.codes,.contact{

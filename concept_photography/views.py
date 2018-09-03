@@ -6,6 +6,7 @@ from home_page_content.models import ShootCount
 from home_page_content.models import PhotographersCount
 from home_page_content.models import OurService
 from contact_information.models import ContactInfo
+from home_page_content.models import ClickToPayLink
 
 
 
@@ -27,6 +28,7 @@ def index(request):
     template = loader.get_template('home.html')
     context = { 'main_title': 'Preschool and Nursery specialists',
                 'small_title': 'Rethink Nursery/Preschool photography',
+                'ClickToPayLink': ClickToPayLink.objects.first(),
                 'CompanyVisions': CompanyVision.objects.all(),
                 'shouldShowCompanyVision': shouldShowCompanyVision,
                 'ShootCount': ShootCount.objects.first(),
